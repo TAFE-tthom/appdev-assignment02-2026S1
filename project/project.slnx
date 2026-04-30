@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FileValidate.Test/FileValidate.Test.csproj" />
+  <Project Path="FileValidate/FileValidate.csproj" />
+</Solution>
