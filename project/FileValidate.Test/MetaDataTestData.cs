@@ -184,21 +184,21 @@ public class MetaDataTestData {
 
 	public static string[][] CompleteOne_Chunks = new string[][] {
 	 new string[] { "b228ef1e354e085f44280e921d5700fce3e808a9681b81ba46d50d3988313573","0", "196608" },
-	 new string[] { "fe29058df15c567cf32dc23825159837b431863ca8f0f2878f73c2bb2e2be11b","16608","196608" },
-	 new string[] { "97aaab2caf12489b64e703468f8bcedd4514acaec3132ce568008dd6a80cf4a1","33216","196608" },
-	 new string[] { "2eb439690cb27425456dc9d81e2fcae7f854a369f058574558abd5c223f38e55","59824","196608" },
-	 new string[] { "6b5658d1857cb2fb1566c970ad76cbed31c3629fddf2a5c3d5a136560d84157b","76432","196608" },
-	 new string[] { "0d120e3cb12ffb3a845bbe391e5f5cff5de4fda5e69535faab2473d4abb9fc3d","93040","196608" },
-	 new string[] { "96ea6466dfe4e93d632e3db753bb88776bb60a6250ab57a3daad874e8c2c8b08","179648","196608" },
-	 new string[] { "439694e57d5976df21d5935718da16d1e62ae3d0d21dff08030a0f5957f36feb","176256","196608" },
-	 new string[] { "77a10c932d24761507019bac19fab9d6d2ca952b7d2c567b2455a33c399355cd","172864","196608" },
-	 new string[] { "b4485ab7e4b7cabdba157878cd1bd61228e9879e504ff4a7f8e9be4ed8ec8cd7","169472","196608" },
-	 new string[] { "254396e37fbbf05939f84909336d92f9a6ec75b18f3afa355053f597e28d8643","166080","196608" },
-	 new string[] { "d2b713dc4182b95e4966a27cf88253e9c431f00670f4a2f17f2ec1746fcdb8de","262688","196608" },
-	 new string[] { "aa64b2d41547c188756cec877fbce542b4285f831384aae40c22cf6bf3093ce1","259296","196608" },
-	 new string[] { "ae46f38939b597ae628e446d01b13de1a2afb229160d04aa43bf984213906eda","255904","196608" },
-	 new string[] { "7154da3b11159d9b5c49e63fe4304150ca031a1a94479b5aad3bdd4121e71761","252512","196608" },
-	 new string[] { "67d612a886602289f6f0df6aaf552fda6b30a25103bc100cd6df76f92b46aaa6","249120","196608" },
+	 new string[] { "fe29058df15c567cf32dc23825159837b431863ca8f0f2878f73c2bb2e2be11b","196608","196608" },
+	 new string[] { "97aaab2caf12489b64e703468f8bcedd4514acaec3132ce568008dd6a80cf4a1","393216","196608" },
+	 new string[] { "2eb439690cb27425456dc9d81e2fcae7f854a369f058574558abd5c223f38e55","589824","196608" },
+	 new string[] { "6b5658d1857cb2fb1566c970ad76cbed31c3629fddf2a5c3d5a136560d84157b","786432","196608" },
+	 new string[] { "0d120e3cb12ffb3a845bbe391e5f5cff5de4fda5e69535faab2473d4abb9fc3d","983040","196608" },
+	 new string[] { "96ea6466dfe4e93d632e3db753bb88776bb60a6250ab57a3daad874e8c2c8b08","1179648","196608" },
+	 new string[] { "439694e57d5976df21d5935718da16d1e62ae3d0d21dff08030a0f5957f36feb","1376256","196608" },
+	 new string[] { "77a10c932d24761507019bac19fab9d6d2ca952b7d2c567b2455a33c399355cd","1572864","196608" },
+	 new string[] { "b4485ab7e4b7cabdba157878cd1bd61228e9879e504ff4a7f8e9be4ed8ec8cd7","1769472","196608" },
+	 new string[] { "254396e37fbbf05939f84909336d92f9a6ec75b18f3afa355053f597e28d8643","1966080","196608" },
+	 new string[] { "d2b713dc4182b95e4966a27cf88253e9c431f00670f4a2f17f2ec1746fcdb8de","2162688","196608" },
+	 new string[] { "aa64b2d41547c188756cec877fbce542b4285f831384aae40c22cf6bf3093ce1","2359296","196608" },
+	 new string[] { "ae46f38939b597ae628e446d01b13de1a2afb229160d04aa43bf984213906eda","2555904","196608" },
+	 new string[] { "7154da3b11159d9b5c49e63fe4304150ca031a1a94479b5aad3bdd4121e71761","2752512","196608" },
+	 new string[] { "67d612a886602289f6f0df6aaf552fda6b30a25103bc100cd6df76f92b46aaa6","2949120","196608" },
 	};
 	
 	// Complete 2 Module
@@ -235,28 +235,28 @@ public class MetaDataTestData {
 	public static string[][] CompleteTwo_Chunks = new string[][] {
 		new string[] { "58b7dac01559d3c40231478931d0f378d6641d046605a7704a3fcbfd0cca6c55","0","131072" },
 		new string[] { "9f0e78c7fe5aebda557346883d4b6588c46929c1a025e7a80e715182fc0919bf","131072","131072" },
-	 new string[] { "3b12bdbc9c5fe622a9ff6e41893ac438d36b0232e2eb6899bd8fe1312f2d703c","262144","131072" },
-	 new string[] { "d612537ee5767ac55f7f4b1f11e0cf496792f6edfbfe27a236155d3692e40f07","393216","131072" },
-	 new string[] { "6545c4040e3c77af4d04d16e6679e3eadef0db5a092dbbfed798127f6937021d","524288","131072" },
-	 new string[] { "ec730d27e7803a030a9bdac8fa3776edafab6954ca7e697618298a5eceb26ef1","655360","131072" },
-	 new string[] { "0c3b56343b2115d8f5cc073169fe8ef29ba53c1c8de0dcb36808a11a2d6eb244","786432","131072" },
-	 new string[] { "05622285444de1e5eb8ff544de53e8ab775d603863de4ef9f056043af4508b25","917504","131072" },
-	 new string[] { "6108aecc4268ff61ba47c1d5b0fe1c4259d0057ee2b3fc585dbc94cf63356622","1048576","131072" },
-	 new string[] { "50a94f2d5ce7d493ad35ba4c935e3e02be6a3396663225c2fe648fdf966d8d1f","1179648","131072" },
-	 new string[] { "9e93ef0ef1642fe1cea88bcf1e492c016ad9ca86ae7320cfc8c9c329db1ae716","1310720","131072" },
-	 new string[] { "64a72ad5e211476bb0108fd11a20e697cf87841cd000b07894aece4029a6280f","1441792","131072" },
-	 new string[] { "5a936ba8baf521c9647cdaa372f9b959e60ab76d79a5fd91d0755b49fd431880","1572864","131072" },
-	 new string[] { "c339251909cba1214d25da384b79820794debbf930dbc0db536f18753dee1f40","1703936","131072" },
-	 new string[] { "0b7aab9ed70af7028bb121809508765ef4793f2bc8fea1230a71d019b707d378","1835008","131072" },
-	 new string[] { "67febd45342be2a5b972f5c90a9a639fd076f186b180f584d496fa8e55725cb2","1966080","131072" },
+		new string[] { "3b12bdbc9c5fe622a9ff6e41893ac438d36b0232e2eb6899bd8fe1312f2d703c","262144","131072" },
+		new string[] { "d612537ee5767ac55f7f4b1f11e0cf496792f6edfbfe27a236155d3692e40f07","393216","131072" },
+		new string[] { "6545c4040e3c77af4d04d16e6679e3eadef0db5a092dbbfed798127f6937021d","524288","131072" },
+		new string[] { "ec730d27e7803a030a9bdac8fa3776edafab6954ca7e697618298a5eceb26ef1","655360","131072" },
+		new string[] { "0c3b56343b2115d8f5cc073169fe8ef29ba53c1c8de0dcb36808a11a2d6eb244","786432","131072" },
+		new string[] { "05622285444de1e5eb8ff544de53e8ab775d603863de4ef9f056043af4508b25","917504","131072" },
+		new string[] { "6108aecc4268ff61ba47c1d5b0fe1c4259d0057ee2b3fc585dbc94cf63356622","1048576","131072" },
+		new string[] { "50a94f2d5ce7d493ad35ba4c935e3e02be6a3396663225c2fe648fdf966d8d1f","1179648","131072" },
+		new string[] { "9e93ef0ef1642fe1cea88bcf1e492c016ad9ca86ae7320cfc8c9c329db1ae716","1310720","131072" },
+		new string[] { "64a72ad5e211476bb0108fd11a20e697cf87841cd000b07894aece4029a6280f","1441792","131072" },
+		new string[] { "5a936ba8baf521c9647cdaa372f9b959e60ab76d79a5fd91d0755b49fd431880","1572864","131072" },
+		new string[] { "c339251909cba1214d25da384b79820794debbf930dbc0db536f18753dee1f40","1703936","131072" },
+		new string[] { "0b7aab9ed70af7028bb121809508765ef4793f2bc8fea1230a71d019b707d378","1835008","131072" },
+		new string[] { "67febd45342be2a5b972f5c90a9a639fd076f186b180f584d496fa8e55725cb2","1966080","131072" },
 	};
 	
 	// Complete 3 Module
 	public static string CompleteThree_Path = "./complete_3.tpk";
 
-	public static string CompleteThree_Identifier = "iu1doow0eeChie2viyo9ohho9xoet7un2iaz4ohkiz0soo5d";
+	public static string CompleteThree_Identifier = "KooChahsitiux1yug6Wiqu5phee0Eeth6eiGhaimo8caip1i";
 
-	public static string CompleteThree_FileName = "complete_2.dat";
+	public static string CompleteThree_FileName = "complete_3.dat";
 
 	public static int CompleteThree_Size = 2097152;
 
