@@ -12,6 +12,7 @@ public class TestCaseUtil
         return description;
     }
 
+
     public static void TideFile_ActionCheckFromLoad(string path,
         Action<ITideFileFormat> action) {
         var description = LoadMetaData(path);
@@ -24,10 +25,23 @@ public class TestCaseUtil
         action(tfile);
     }
 
-    public static void TideFile_CompareBytes(ITideFileFormat tfile,
-        List<byte> expected)
+    public static void TideFileChunk_CompareBytes(ITideFileFormat tfile,
+        List<byte> expected, int index)
     {
-        
+        var chunk = tfile.GetChunkData(index);
+        if(expected.Count() != chunk.Count())
+        {
+            Assert.Fail("The length of the lists is incorrect");
+        }
+        for(int i = 0; i < expected.Count(); i++) {
+            var eb = expected[i];
+            var ab = chunk[i];
+            if(eb != ab)
+            {
+                Assert.Fail($"Bytes at index: {index} do not match");
+            }
+        }
+
     }
 
     public static void TideFileCheckFields_Identifier(ITideMetaData meta, string ident) {

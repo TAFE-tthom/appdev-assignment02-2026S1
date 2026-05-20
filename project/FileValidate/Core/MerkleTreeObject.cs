@@ -47,6 +47,6 @@ public interface IMerkleTreeObject
 	//          this will return the data of all leaf nodes within that subtree
 	// 
 	// </summary>
-	List<byte> DataFromFromHash(string hash);
+	List<byte> DataFromHash(string hash);
 
 }

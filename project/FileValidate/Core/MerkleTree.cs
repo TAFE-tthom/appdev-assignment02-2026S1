@@ -1,7 +1,7 @@
 namespace FileValidate.Core;
 
 
-public interface MerkleTree : IMerkleTreeObject
+public class MerkleTree : IMerkleTreeObject
 {
 
 	// <summary>
@@ -61,7 +61,7 @@ public interface MerkleTree : IMerkleTreeObject
 	//          this will return the data of all leaf nodes within that subtree
 	// 
 	// </summary>
-	public List<byte> DataFromFromHash(string hash) {
+	public List<byte> DataFromHash(string hash) {
 
 		return new List<byte>();
 	}
