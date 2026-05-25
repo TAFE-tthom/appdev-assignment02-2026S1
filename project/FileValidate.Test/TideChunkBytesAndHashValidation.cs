@@ -30,13 +30,18 @@ public class TideChunkBytesAndHashValidation
         Assert.Equal(expected.Hash, actual.ComputeChunkHash(chunkIndex));
     }
 
+    private void CheckHashIsInvalid(ChunkTestData expected, ITideFileFormat actual,
+        int chunkIndex)
+    {
+        Assert.NotEqual(expected.Hash, actual.ComputeChunkHash(chunkIndex));
+    }
 
     [Fact]
     public void Test_Construct_CheckHash_Index_1()
     {
         ChunkTestData testData = ConstructChunkTestData(
-            ChunkComplete1TestData.ChunkHash_0,
-            ChunkComplete1TestData.ChunkData_0
+            ChunkInComplete1TestData.ChunkHash_0,
+            ChunkInComplete1TestData.ChunkData_0
         );
         var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
         var file = TideFile.WithMetaData(description);
@@ -44,6 +49,50 @@ public class TideChunkBytesAndHashValidation
 
         CheckChunkHash(testData, file, chunkIndex);
     }
+    
+    
+    [Fact]
+    public void Test_Construct_CheckInvalidHash_Index_3()
+    {
+        ChunkTestData testData = ConstructChunkTestData(
+            ChunkInComplete1TestData.ChunkHash_2,
+            ChunkInComplete1TestData.ChunkData_2
+        );
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var file = TideFile.WithMetaData(description);
+        int chunkIndex = 2;
+
+        CheckHashIsInvalid(testData, file, chunkIndex);
+    }
+
+    [Fact]
+    public void Test_Construct_CheckInvalidHash_Index_4()
+    {
+        ChunkTestData testData = ConstructChunkTestData(
+            ChunkInComplete1TestData.ChunkHash_3,
+            ChunkInComplete1TestData.ChunkData_3
+        );
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var file = TideFile.WithMetaData(description);
+        int chunkIndex = 3;
+
+        CheckHashIsInvalid(testData, file, chunkIndex);
+    }
+    
+    [Fact]
+    public void Test_Construct_CheckHash_Index_5()
+    {
+        ChunkTestData testData = ConstructChunkTestData(
+            ChunkInComplete1TestData.ChunkHash_4,
+            ChunkInComplete1TestData.ChunkData_4
+        );
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var file = TideFile.WithMetaData(description);
+        int chunkIndex = 4;
+
+        CheckChunkHash(testData, file, chunkIndex);
+    }
+    
     
     [Fact]
     public void Test_Construct_CheckHash_Index_2()

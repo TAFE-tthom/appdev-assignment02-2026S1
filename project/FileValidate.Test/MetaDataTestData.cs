@@ -156,7 +156,7 @@ public class MetaDataTestData {
 	
 	public static string CompleteOne_Identifier = "iequ4ahjeewo6Nosa1Itoloa2ahfae5oiZaev1eimuo4aiCh";
 
-	public static string CompleteOne_FileName = "complete_1.dat";
+	public static string CompleteOne_FileName = "./complete_1.dat";
 
 	public static int CompleteOne_Size = 3145728;
 
