@@ -8,7 +8,7 @@ public class MerkleTree : IMerkleTreeObject
 	// Creates a merkle tree object from the file and metadata associated
 	// with the file
 	// </summary>
-	public IMerkleTreeObject? FromFile(ITideFileFormat file) {
+	public static IMerkleTreeObject? FromFile(ITideFileFormat file) {
 		return null;
 	}
 	
