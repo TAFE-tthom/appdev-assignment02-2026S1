@@ -37,28 +37,41 @@ public class TideChunkBytesAndHashValidation
     }
 
     [Fact]
-    public void Test_Construct_CheckHash_Index_1()
+    public void Test_Construct_CheckdHashOfIncomplete_Index_1()
     {
         ChunkTestData testData = ConstructChunkTestData(
             ChunkInComplete1TestData.ChunkHash_0,
             ChunkInComplete1TestData.ChunkData_0
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 0;
 
         CheckChunkHash(testData, file, chunkIndex);
     }
-    
-    
+
     [Fact]
-    public void Test_Construct_CheckInvalidHash_Index_3()
+    public void Test_Construct_CheckHashOfIncomplete_Index_2()
+    {
+        ChunkTestData testData = ConstructChunkTestData(
+            ChunkInComplete1TestData.ChunkHash_0,
+            ChunkInComplete1TestData.ChunkData_0
+        );
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
+        var file = TideFile.WithMetaData(description);
+        int chunkIndex = 1;
+
+        CheckChunkHash(testData, file, chunkIndex);
+    }
+
+    [Fact]
+    public void Test_Construct_CheckInvalidHashOfIncomplete_Index_3()
     {
         ChunkTestData testData = ConstructChunkTestData(
             ChunkInComplete1TestData.ChunkHash_2,
             ChunkInComplete1TestData.ChunkData_2
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 2;
 
@@ -66,13 +79,13 @@ public class TideChunkBytesAndHashValidation
     }
 
     [Fact]
-    public void Test_Construct_CheckInvalidHash_Index_4()
+    public void Test_Construct_CheckInvalidHashOfIncomplete_Index_4()
     {
         ChunkTestData testData = ConstructChunkTestData(
             ChunkInComplete1TestData.ChunkHash_3,
             ChunkInComplete1TestData.ChunkData_3
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 3;
 
@@ -80,20 +93,35 @@ public class TideChunkBytesAndHashValidation
     }
     
     [Fact]
-    public void Test_Construct_CheckHash_Index_5()
+    public void Test_Construct_CheckHashOfIncomplete_Index_5()
     {
         ChunkTestData testData = ConstructChunkTestData(
             ChunkInComplete1TestData.ChunkHash_4,
             ChunkInComplete1TestData.ChunkData_4
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 4;
 
         CheckChunkHash(testData, file, chunkIndex);
     }
+
+    // Check hash
     
-    
+    [Fact]
+    public void Test_Construct_CheckHash_Index_1()
+    {
+        ChunkTestData testData = ConstructChunkTestData(
+            ChunkComplete1TestData.ChunkHash_0,
+            ChunkComplete1TestData.ChunkData_0
+        );
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.CompleteOne_Path);
+        var file = TideFile.WithMetaData(description);
+        int chunkIndex = 0;
+
+        CheckChunkHash(testData, file, chunkIndex);
+    }
+
     [Fact]
     public void Test_Construct_CheckHash_Index_2()
     {
@@ -153,6 +181,8 @@ public class TideChunkBytesAndHashValidation
         CheckChunkHash(testData, file, chunkIndex);
 
     }
+
+    // Compares the bytes
 
     [Fact]
     public void Test_Construct_CheckBytes_1()
