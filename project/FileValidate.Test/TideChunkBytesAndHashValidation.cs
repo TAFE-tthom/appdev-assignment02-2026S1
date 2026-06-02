@@ -68,7 +68,7 @@ public class TideChunkBytesAndHashValidation
     public void Test_Construct_CheckInvalidHashOfIncomplete_Index_3()
     {
         ChunkTestData testData = ConstructChunkTestData(
-            ChunkInComplete1TestData.ChunkHash_2,
+            ChunkInComplete1TestData.ChunkHash_Expected_2,
             ChunkInComplete1TestData.ChunkData_2
         );
         var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
@@ -82,7 +82,7 @@ public class TideChunkBytesAndHashValidation
     public void Test_Construct_CheckInvalidHashOfIncomplete_Index_4()
     {
         ChunkTestData testData = ConstructChunkTestData(
-            ChunkInComplete1TestData.ChunkHash_3,
+            ChunkInComplete1TestData.ChunkHash_Expected_3,
             ChunkInComplete1TestData.ChunkData_3
         );
         var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
