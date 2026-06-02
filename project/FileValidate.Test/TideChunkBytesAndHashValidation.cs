@@ -43,7 +43,7 @@ public class TideChunkBytesAndHashValidation
             ChunkInComplete1TestData.ChunkHash_0,
             ChunkInComplete1TestData.ChunkData_0
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 0;
 
@@ -57,7 +57,7 @@ public class TideChunkBytesAndHashValidation
             ChunkInComplete1TestData.ChunkHash_0,
             ChunkInComplete1TestData.ChunkData_0
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 1;
 
@@ -71,7 +71,7 @@ public class TideChunkBytesAndHashValidation
             ChunkInComplete1TestData.ChunkHash_2,
             ChunkInComplete1TestData.ChunkData_2
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 2;
 
@@ -85,7 +85,7 @@ public class TideChunkBytesAndHashValidation
             ChunkInComplete1TestData.ChunkHash_3,
             ChunkInComplete1TestData.ChunkData_3
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 3;
 
@@ -99,7 +99,7 @@ public class TideChunkBytesAndHashValidation
             ChunkInComplete1TestData.ChunkHash_4,
             ChunkInComplete1TestData.ChunkData_4
         );
-        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_FileName);
+        var description = TideFileDescription.FromFilePath(MetaDataTestData.IncompleteOne_Path);
         var file = TideFile.WithMetaData(description);
         int chunkIndex = 4;
 

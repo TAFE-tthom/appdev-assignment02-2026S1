@@ -7,6 +7,7 @@ public class MetaDataTestData {
 
 	public static string IncompleteOne_Identifier = "chae6ur5bookah8eihahPoojaef6Ieghoapohteesohw3ohj";
 
+	public static string IncompleteOne_Path = "incomplete_1.tpk";
 	public static string IncompleteOne_FileName = "incomplete_1.dat";
 
 	public static int IncompleteOne_Size = 1048576;
